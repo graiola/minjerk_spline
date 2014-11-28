@@ -166,10 +166,10 @@ for k = 1:n-1
   yd = [yd cur_yd]; %#ok<AGROW>
   ydd = [ydd cur_ydd]; %#ok<AGROW>
   yddd = [yddd cur_yddd]; %#ok<AGROW>
-  clear cur_y
-  clear cur_yd
-  clear cur_ydd
-  clear cur_yddd 
+  cur_y = [];
+  cur_yd = [];
+  cur_ydd = [];
+  cur_yddd = []; 
 end
 y = [y x(end)];
 yd = [yd v(end)];
